@@ -14,22 +14,32 @@
 // console.log(calculateTax(3000, 2000))
 
 
-// problem: 02
+// // problem: 02
 
-function sendNotification(email) {
- const emailExpression = /@/;
- if(!emailExpression.test(email)){
-    return "Invalid Email"
- }else{
-    const massage  = email.split('@');
-    const notification = massage[0]+" sent you an email from "+massage[1];
-    return notification;
- }
+// function sendNotification(email) {
+//  const emailExpression = /@/;
+//  if(!emailExpression.test(email)){
+//     return "Invalid Email"
+//  }else{
+//     const massage  = email.split('@');
+//     const notification = massage[0]+" sent you an email from "+massage[1];
+//     return notification;
+//  }
 
+// }
+// console.log(sendNotification('hello@gmail.com'));
+
+// // problem:03
+
+function checkDigitsInName(name) {
+    if(typeof name !== 'string'){
+        return "invalid input"
+    }
+    const num = /\d/.test(name)
+    return num;
+    
 }
-
-console.log(sendNotification('hello@gmail.com'));
-
+console.log(checkDigitsInName('imran10'))
 
 
 
