@@ -31,15 +31,43 @@
 
 // // problem:03
 
-function checkDigitsInName(name) {
-    if(typeof name !== 'string'){
-        return "invalid input"
-    }
-    const num = /\d/.test(name)
-    return num;
+// function checkDigitsInName(name) {
+//     if(typeof name !== 'string'){
+//         return "invalid input"
+//     }
+//     const num = /\d/.test(name)
+//     return num;
     
-}
-console.log(checkDigitsInName('imran10'))
+// }
+// console.log(checkDigitsInName('imran'))
+
+
+//  problem:04
+
+// function calculateFinalScore(obj) {
+//     if(typeof obj !== "object" || obj === null){
+//         return "Invalid Input"
+//     }
+
+//     const finalSum = obj.testScore + obj.schoolGrade;
+    
+//     let sum = 0;
+//     if(obj.isFFamily === true){
+//         sum += 20;
+//     }
+
+//     const finalScore = finalSum + sum;
+   
+//     if(finalScore >= 80){
+//         return true;
+//     }else{
+//         return false;
+//     }
+  
+// };
+
+// console.log(calculateFinalScore({ name: "Rajib", testScore: 45,  schoolGrade: 25, isFFamily : true  }));
+// console.log(calculateFinalScore({ name: "Rajib", testScore: 40,  schoolGrade: 25, isFFamily : false  }));
 
 
 
